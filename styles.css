@@ -132,6 +132,41 @@ main {
   padding: 0.5rem;
 }
 
+.home {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.dot-animation {
+  margin-top: 5rem;
+  font-size: 1.8rem;
+}
+
+@keyframes dotAnimation {
+  0%,
+  25% {
+    content: "Estamos trabajando";
+  }
+  25%,
+  50% {
+    content: "Estamos trabajando.";
+  }
+  50%,
+  75% {
+    content: "Estamos trabajando..";
+  }
+  75%,
+  100% {
+    content: "Estamos trabajando...";
+  }
+}
+
+.dot-animation::before {
+  content: "Estamos trabajando";
+  display: inline-block;
+  animation: dotAnimation 1.5s infinite;
+}
+
 .container {
   max-width: 90%;
   margin: 3rem auto;

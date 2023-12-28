@@ -12,14 +12,19 @@ function loadHeading() {
 
 function loadHome() {
     const content = document.getElementById('content');
-    content.innerHTML = '<h2 class="content-header">Bienvenido a la página de inicio</h2>';
+    content.innerHTML = `
+    <h2 class="content-header">Bienvenido a la página de inicio</h2>
+    <div class="home">
+        <div class="dot-animation"></div>
+    </div>
+    `;
 }
 
 function loadBlog() {
     const content = document.getElementById('content');
     content.innerHTML = `
         <div class="card win-border">
-            <h2 class="card-heading">Entrada de Blog</h2>
+            <h2 class="card-heading">Primera Entrada</h2>
             <div class="card-body">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat aliquet lectus, ut facilisis arcu fermentum at.</p>
                 <a class="card-link">Ver más...</a>
@@ -27,7 +32,7 @@ function loadBlog() {
         </div>
 
         <div class="card win-border">
-            <h2 class="card-heading">Entrada de Blog</h2>
+            <h2 class="card-heading">Segunda Entrada</h2>
             <div class="card-body">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat aliquet lectus, ut facilisis arcu fermentum at.</p>
                 <a class="card-link">Ver más...</a>
