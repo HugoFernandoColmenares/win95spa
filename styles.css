@@ -1,11 +1,11 @@
 :root {
-  --primary: #017e73;
-  --light-gray: #e9e9e9;
-  --gray: #c0c0c0;
-  --dark-gray: #808080;
-  --post-gray: #464646;
+  --background: #017e73;
+  --primary: #c0c0c0;
+  --light-primary: #e9e9e9;
+  --dark-primary: #808080;
+  --post-primary: #464646;
+  --secondary: #0b22b8;
   --yellow: #ffff00;
-  --blue: #0b22b8;
   --whithe: #fff;
   --black: #000;
 }
@@ -21,9 +21,10 @@ html {
 }
 
 body {
-  background-color: var(--primary); /* Color pastel */
+  background-color: var(--background);
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 h1,
@@ -54,21 +55,21 @@ div {
 }
 
 .win-border {
-  border-top: 0.2rem solid var(--light-gray);
-  border-left: 0.2rem solid var(--light-gray);
-  border-bottom: 0.2rem solid var(--dark-gray);
-  border-right: 0.2rem solid var(--dark-gray);
+  border-top: 0.2rem solid var(--light-primary);
+  border-left: 0.2rem solid var(--light-primary);
+  border-bottom: 0.2rem solid var(--dark-primary);
+  border-right: 0.2rem solid var(--dark-primary);
 }
 
 .win-border-alter {
-  border-top: 0.2rem solid var(--dark-gray);
-  border-left: 0.2rem solid var(--dark-gray);
-  border-bottom: 0.2rem solid var(--light-gray);
-  border-right: 0.2rem solid var(--light-gray);
+  border-top: 0.2rem solid var(--dark-primary);
+  border-left: 0.2rem solid var(--dark-primary);
+  border-bottom: 0.2rem solid var(--light-primary);
+  border-right: 0.2rem solid var(--light-primary);
 }
 
 .header {
-  background-color: var(--gray); /* Rosa pastel */
+  background-color: var(--primary); /* Rosa pastel */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -82,8 +83,8 @@ div {
 }
 
 nav {
-  border-top: 0.2rem solid var(--dark-gray);
-  background-color: var(--gray); /* Rosa pastel */
+  border-top: 0.2rem solid var(--dark-primary);
+  background-color: var(--primary); /* Rosa pastel */
   padding: 1rem;
   width: 100%;
   justify-content: center;
@@ -114,7 +115,7 @@ a {
 }
 
 .header-nav:hover {
-  background: var(--dark-gray);
+  background: var(--dark-primary);
 }
 
 a:hover {
@@ -177,13 +178,13 @@ main {
 .card {
   width: 100%;
   margin: 0 auto;
-  background-color: var(--gray);
+  background-color: var(--primary);
   padding: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .card-heading {
-  background-color: var(--blue);
+  background-color: var(--secondary);
   padding: 0.5rem;
   margin: 0;
 }
@@ -191,7 +192,7 @@ main {
 .card-body {
   max-width: 90%;
   margin: 0 auto;
-  color: var(--post-gray);
+  color: var(--post-primary);
   padding: 1rem;
 }
 
@@ -201,20 +202,20 @@ main {
 }
 
 .card-link {
-  color: var(--blue);
+  color: var(--secondary);
   font-weight: 600;
 }
 
 .about {
   width: 100%;
   margin: 0 auto;
-  background-color: var(--gray);
+  background-color: var(--primary);
   padding: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .about-heading {
-  background-color: var(--blue);
+  background-color: var(--secondary);
   padding: 0.5rem;
   margin: 0;
 }
