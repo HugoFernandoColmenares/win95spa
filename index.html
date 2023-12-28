@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 95 SPA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="loadHeading()">
+
+    <header class="header">
+        <h1 class="heading" id="heading">Windows 95 SPA</h1>
+        <nav>
+            <ul>
+                <a href="#" onclick="loadHome()">
+                    <li class="header-nav win-border">
+                        Inicio
+                    </li>
+                </a>
+
+                <a href="#" onclick="loadBlog()">
+                    <li class="header-nav win-border">
+                        Blog
+                    </li>
+                </a>
+
+                <a href="#" onclick="loadAbout()">
+                    <li class="header-nav win-border">
+                        Acerca de
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content" class="container">
+        <!-- Contenido dinámico cargado por JavaScript -->
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
